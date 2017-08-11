@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+canvas:hover{
+    cursor: crosshair;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.top{
+    width:100%;
+    height:100px;
+    background: #F5F6F7;
+    border-bottom: 7px solid #C5CFDF;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+.top .fn{
+    width:140px;
+    height:100px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+.top .fn1{
+    width:400px;
+    height:100px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+.top .fn2{
+    width:180px;
+    height:100px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+.top .fn2 input{
+    width:29px;
+    height:29px;
+    margin-left:5px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.top .fn3{
+    width:100px;
+    height:100px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+.top .fn3 li{
+    font-size: 20px;
+}
+.top ul li{
+    width:30px;
+    height: 30px;
+    border: 1px solid #E2E3E4;
+    float: left;
+    margin: 3px;
+    text-align: center;
+    line-height:30px;
+    font-size:16px;
+    color: #1A6AAB;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.but{
+    width:100%;
+    height:570px;
+    padding: 20px;
+    background: #CDD7E6;
+    position: relative;
+}
+.can{
+    display: block;
+    float: left;
+    margin-right: 20px;
+    background: #fff;
+    border: 2px solid #AEBACC;
+    position: relative;
+}
+.top .imgs{
+    width:60px;
+    height:80px;
+    float: right;
+    margin-right: 80px;
+}
+.top .imgs img{
+    height: 90%;
+}
+.mask{
+    width:100%;
+    height:100%;
+    position: relative;
+    top:0;
+    left:0;
+    background: #000;
+    opacity: 0;
+}
+.gums{
+    border: 1px solid #000;
+}
+.wrieetns{
+    position: absolute;
+    top:50px;
+    left:50px;
+    width: 150px;
+    height:50px;
+    border: 2px dashed #000;
+    z-index: 9999;
+}

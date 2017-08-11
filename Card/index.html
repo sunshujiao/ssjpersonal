@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>纸牌</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+        user-select:none;
+    }
+    html,body{
+        height:100%;
+        width:100%;
+        background: url("img/bigbg.jpg")no-repeat center center/cover;
+        overflow: hidden;
+    }
+    .box{
+        width: 700px;
+        height:600px;
+        margin: 15px auto;
+        position: relative;
+    }
+    .pai{
+        width:90px;
+        height:120px;
+        margin-right: 10px;
+        position: absolute;
+        top:0;
+        left:300px;
+        opacity:0;
+        background-size: 90px 120px;
+        background-repeat:no-repeat;
+        cursor: pointer;
+        border: 3px solid rgba(0,0,0,0);
+    }
+    .left{
+        width:90px;
+        height:30px;
+        position: absolute;
+        top:600px;
+        left:300px;
+        cursor: pointer;
+        z-index: 99999;
+        background: #A9BAB2;
+        text-align: center;
+        line-height: 30px;
+        font-size: 26px;
+        color: #29111F;
+        border-radius: 20px;
+    }
+    .right{
+        width:90px;
+        height:30px;
+        position: absolute;
+        top:550px;
+        right:310px;
+        cursor: pointer;
+        z-index: 99999;
+        background: #A9BAB2;
+        text-align: center;
+        line-height: 30px;
+        font-size: 26px;
+        color:#29111F;
+        border-radius: 20px;
+    }
+    .img{
+        width: 226px;
+        height: 332px;
+        position: absolute;
+        top:50px;
+        left:30px;
+        opacity: 0.7;
+        background: url("img/bj1.webp")no-repeat center center/cover;
+    }
+    .active{
+        border-color: #b1ff69;
+        transform: translateY(-20px);
+    }
+</style>
+<body>
+    <div class="box">
+        <ul></ul>
+        <div class="left">&gt;</div>
+        <div class="right">&lt;</div>
+    </div>
+    <div class="img"></div>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
